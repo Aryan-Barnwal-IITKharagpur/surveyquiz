@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello World</title>
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+ 
+    </head>
+
+    <body style="background-color: #6391ee">
+        <div id="user">
+            <span id="username">HELLO NAME</span>
+        </div>
+
+        <br>
+        <center id="welcome">
+            <p><img src="welcome.gif"> </p>
+    
+            <div>
+              <label for="name" class="form-label namemessage">PLEASE TELL US YOUR NAME</label>
+              <input type="text" placeholder="Enter Name" class="form-control namebox" id="myInput" name="text1">
+              <button type="submit" class="startbutton" onclick="required()">START SURVEY</button>
+            </div>
+        </center>
+
+        <section id="question">
+            <div id="container">
+                <div class="col">
+                    <h3 id="questionBox">
+                        question here
+                    </h3>
+                </div>
+            <div id="optionfor1">
+                <div class="col box">
+                    <input name="option" type="radio" id="first" value="1" style="height:32px; width:32px;" required>
+                    <label for="first" class="options">1/5</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="second" value="2" style="height:32px; width:32px;" required>
+                    <label for="second" class="options">2/5</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="third" value="3" style="height:32px; width:32px;" required>
+                    <label for="third" class="options">3/5</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fourth" value="4" style="height:32px; width:32px;" required>
+                    <label for="fourth" class="options">4/5</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fifth" value="5" style="height:32px; width:32px;" required>
+                    <label for="fifth" class="options">5/5</label>
+                </div>
+            </div>
+
+
+            <div id="optionfor4">
+                <div class="col box">
+                    <input name="option" type="radio" id="first" value="1" style="height:32px; width:32px;" required>
+                    <label for="first" class="options">1/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="second" value="2" style="height:32px; width:32px;" required>
+                    <label for="second" class="options">2/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="third" value="3" style="height:32px; width:32px;" required>
+                    <label for="third" class="options">3/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fourth" value="4" style="height:32px; width:32px;" required>
+                    <label for="fourth" class="options">4/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fifth" value="5" style="height:32px; width:32px;" required>
+                    <label for="fifth" class="options">5/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="first" value="6" style="height:32px; width:32px;" required>
+                    <label for="first" class="options">6/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="second" value="7" style="height:32px; width:32px;" required>
+                    <label for="second" class="options">7/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="third" value="8" style="height:32px; width:32px;" required>
+                    <label for="third" class="options">8/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fourth" value="9" style="height:32px; width:32px;" required>
+                    <label for="fourth" class="options">9/10</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fifth" value="10" style="height:32px; width:32px;" required>
+                    <label for="fifth" class="options">10/10</label>
+                </div>
+            </div>
+
+            <div id="optionfor5">
+                <div class="col box">
+                    <input name="option" type="text" placeholder="Write Here" id="inputtext">
+                </div>
+            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">   <button id="prev" onclick="prev()">Previous</button>   </div>
+                        <div class="col">   <button id="next" onclick="next()">Next</button>    </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+
+        <center>
+            <h1 id="final">THANK YOU FOR THE SURVEY
+                <br>
+                Your Response</h2>
+            <div id="output"></div>
+        </center>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="script1.js"></script>
+
+    </body>
+</html>
